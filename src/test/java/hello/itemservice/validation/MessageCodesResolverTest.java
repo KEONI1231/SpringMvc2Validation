@@ -27,7 +27,10 @@ public class MessageCodesResolverTest {
 
     @Test
     void messageCodesResolverField() {
-        String[] messageCodes = codesResolver.resolveMessageCodes("required", "item", "itemName", String.class);
+        String[] messageCodes = codesResolver.resolveMessageCodes("required",
+                "item",
+                "itemName",
+                String.class);
         for (Object messageCode : messageCodes) {
             System.out.println("messageCode = " + messageCode);
 
